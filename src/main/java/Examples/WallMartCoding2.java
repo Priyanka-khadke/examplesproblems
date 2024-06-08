@@ -24,6 +24,8 @@ public class WallMartCoding2 {
             }
             mp.put(a[i],i);
         }
+        System.out.println(mp);
+
 
     }
 }
