@@ -7,7 +7,7 @@ public class CodingQuestions {
 
     public static void main(String[] args) {
 
-        //feature branch comments added
+        //feature branch comments added--new to check conflict while merge
 
         //1. find the ascii value of each character in string
 
