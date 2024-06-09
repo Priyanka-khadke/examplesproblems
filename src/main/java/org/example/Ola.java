@@ -1,4 +1,4 @@
-/*package org.example;
+package org.example;
 
 public class Ola implements Cab{
 
@@ -9,4 +9,4 @@ public class Ola implements Cab{
         return("Price:5000 Rs");
 
     }
-}*/
+}
