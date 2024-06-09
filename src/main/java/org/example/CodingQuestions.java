@@ -8,6 +8,7 @@ public class CodingQuestions {
     public static void main(String[] args) {
 
         //1. find the ascii value of each character in string
+        //added comment in main branch
 
         String s = "priyanka";
         String[] arry = s.split("");
