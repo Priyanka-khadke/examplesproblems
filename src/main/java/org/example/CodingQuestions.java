@@ -10,6 +10,7 @@ public class CodingQuestions {
         //feature branch comments added--new to check conflict while merge
 
         //1. find the ascii value of each character in string
+        //added comment in main branch
 
         String s = "priyanka";
         String[] arry = s.split("");
