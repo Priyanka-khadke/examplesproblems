@@ -18,7 +18,7 @@ public class CodingQuestions {
         /*s.chars().forEach(System.out::println);*/
 
         //2.find sum of pairs that sum to a number in array
-       /* int[] a = {1, 3, 2, 4, 7, 5, 0};
+        int[] a = {1, 3, 2, 4, 7, 5, 0};
         int sum = 5;
 
         Set<Integer> mp = new HashSet<>();
@@ -30,7 +30,7 @@ public class CodingQuestions {
                 System.out.println(sum - a[i]);
             }
             mp.add(a[i]);
-        }*/
+        }
 
     }
 }
