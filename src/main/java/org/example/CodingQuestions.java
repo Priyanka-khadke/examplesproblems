@@ -7,6 +7,8 @@ public class CodingQuestions {
 
     public static void main(String[] args) {
 
+        //feature branch comments added
+
         //1. find the ascii value of each character in string
 
         String s = "priyanka";
