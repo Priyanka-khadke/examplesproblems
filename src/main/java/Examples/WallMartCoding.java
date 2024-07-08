@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class WallMartCoding {
 
@@ -22,14 +23,13 @@ public class WallMartCoding {
         studenList.add(s4);
         studenList.add(s5);
 
-        sortStudentsOnMarks(studenList);
-        System.out.println(studenList);
+        //sortStudentsOnMarks(studenList);
+        sortUsingStream(studenList);
+        //System.out.println(studenList);
 
     }
     public static void sortStudentsOnMarks(List<Student>studentList){
-        Collections.sort(studentList, new Comparator<Student>() {
-            @Override
-            public int compare(Student o1, Student o2) {
+        Collections.sort(studentList, (o1, o2) ->{
                 if(o2.getMarks()>o1.getMarks()){
                     return 1;
                 }
@@ -38,7 +38,12 @@ public class WallMartCoding {
                 }
                 return o1.getName().compareTo(o2.getName());
 
-            }
+
         });
+    }
+
+    public static void sortUsingStream(List<Student>studList) {
+        List<Student> collect = studList.stream().sorted(Comparator.comparing(Student::getMarks).reversed()).collect(Collectors.toList());
+        System.out.println(collect);
     }
 }
